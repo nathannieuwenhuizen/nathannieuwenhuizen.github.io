@@ -1,0 +1,278 @@
+/*main info.
+---------------------------*/
+body{
+    
+    background-image: url("img/bg3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+}
+p, h1, h2, h3, h4, h5, h6, ul, li,b{
+    color: white;
+    position: relative;
+}
+b,h1,h2,h3,h4,h5{
+    
+    color: burlywood;
+    text-shadow: 2px 2px 1px black;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 20px;
+}
+a{
+    transition: color 0.5s ease;
+    color:orange;
+    text-decoration: none;
+    
+}
+a:hover{
+    transition: color 0.5s ease;
+    color: aquamarine;
+    
+}
+iframe{
+    margin: 20px auto;
+}
+img{
+
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    transition: box-shadow 1s ease;
+    
+}
+
+#header img{
+    border: none;
+    position: inherit;
+    max-width:  100%;
+}
+#header a{
+    display: block;
+}
+#mainwrapper a img:hover{
+    transition: box-shadow 1s ease;
+    box-shadow: 0px 0px 50px orange;
+}
+
+/*body
+---------------------------*/
+#content{
+    box-shadow: 00px 20px 50px black;
+    margin: 20px auto ;
+    border: 0px solid black;
+}
+
+/*pc lay out*/
+@media only screen and (min-width: 1000px){
+    #nav{
+        transition: height 0.5s ease;
+        height: 43px;
+        margin-top: -20px;
+
+    }
+    #nav ul li a {
+        float: left;
+        font-size: 20px;
+    }
+    #half, #halfdescription{
+        float: left;
+        width: 45%;
+        padding-right: 5%;
+    }
+    #halfdescription{
+        float: right;
+    }
+    #mainwrapper{
+        text-align: left;
+    }
+    #header a{
+        margin-left: 0;
+        width: auto;
+        max-width:  500px;
+    }
+    #canvas{
+        margin-left: -5%;
+    }
+    p, ul,li,b{
+    font-size: 18px;
+    }
+}
+@media only screen and (min-width: 1000px){
+    #content{
+        transition: width 1s ease;
+        transition: left 1s ease;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+    }
+    #collom{
+        width: 25%;
+    }
+    #halfcollom{
+        width: 100%;
+    }
+}
+
+
+/*mobile lay out*/
+@media only screen and (max-width: 1000px){
+    #nav{
+        transition: height 0.5s ease;
+        height: 270px;
+        margin-top: -30px;
+        
+    }
+    #nav ul li a {
+        float: none;
+        font-size: 30px;
+        
+    }
+        #half, #halfdescription{
+        float: none;
+        width: 95%;
+        padding-right: 5%;
+    }
+    #mainwrapper{
+        text-align: center;
+    }
+    #header a{
+        width: 100%;
+        display: block;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #header{
+        display: block;
+        padding-bottom: 10px;
+    }
+    #canvas{
+        margin-left: -55%;
+    }
+    p, ul,li,b{
+    font-size: 24px;
+}
+}
+
+@media only screen and (max-width: 1000px){
+    #content{
+        transition: width 1s ease;
+        transition: left 1s ease;
+        position: absolute;
+        width: 95%;
+        left: 2.5%;
+    }
+    #collom, halfcollom{
+        width: 90%;
+    }
+}
+
+
+
+#header{
+
+    background-color: rgba(0,0,0,0.5);
+    height: auto;
+    padding: 20px 10px;
+}
+#nav{
+    background-color: rgba(30,30,30,1);    
+}
+#mainwrapper{
+    clear: left;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(6, 75, 92,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#collom, #halfcollom{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    min-height: 600px;
+    float:left;
+    padding-right: 2.5%;
+    padding-left: 1.5%;
+    margin: 2% 2%; 
+}
+
+#clear{
+    clear: both;
+}
+#line{
+    border-bottom: 1px solid white;
+}
+#center{
+    text-align: center;
+}
+#footer{
+    clear: left;
+    position: relative;
+    width: auto;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: rgba(20,20,20,1);
+}
+#footer p{    
+    font-size: 15px;
+}
+
+/*navigation
+---------------------------*/
+#nav ul {
+    list-style:none;
+    list-style-type: none;
+    position: relative;
+    left: -40px;
+    width: 100%;
+}
+
+#nav ul li a {
+    transition: background-color 0.5s ease;
+    text-align: center;
+    
+    font-style:inherit;
+    display: block;
+    padding: 10px 20px;
+}
+
+#nav ul li a:hover {
+    transition: background-color 0.5s ease;
+    background-color: #111;
+}
+#nav ul li a:active{
+    background-color: black;
+}
+#nav ul .active {
+    background-color: black;
+}
+
+#nav ul li:last-child {
+    border-right: none;
+}
+/*
+#canvas{
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}*/
