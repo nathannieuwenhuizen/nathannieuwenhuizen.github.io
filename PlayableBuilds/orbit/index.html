@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	 	 <title>Orbit</title>
+	 	 <link rel="stylesheet" type="text/css" href="style.css">
+	 	 <script src="Punt.js"></script>
+	 	 <script src="Vector.js"></script>
+	 	 <script src="Bal.js"></script>
+         <script src="script.js"></script>
+	</head>
+	 <body>
+	 	 
+	 	 <canvas id="canvas" width="800" height="400">
+	 	     no canvas
+	 	 </canvas>
+
+	 	 <div id= "controls">
+	 	 	<button type="button" id= "showButton" style="background-color: transparent; border: none;" > <img src="ball.png" style= "width: 50px;" ></button> 
+		 	 
+		 	 
+		 	 <div id="groupInfo">
+		 	 	<br>
+		 	 	<button type="button" id= "spawnButton">Spawn Orb group</button> 
+		 	 <button type="button" id= "clearButton">Clear orbs</button> 
+		 	 <br>
+		 	 	<div id="half">
+
+				<br>
+			 	 <b>Amount of orbs 
+			 	 	
+			 	 <br>
+			 	 Radius of circle 
+			 	 <br>
+			 	 Orb size
+			 	 <br>
+			 	 Group speed X
+			 	 <br>
+			 	 Group speed Y
+			 	 <br>
+			 	 Group X position
+			 	 <br>
+			 	 Group Y position
+			 	 <br>
+			 	 Ball speed cos
+			 	 <br>
+			 	 Ball speed sin
+			 	 <br>
+			 	 Angle of circle
+			 	 <br>
+			 	 Spiral spawning
+			 	 <br>
+			 	 Delay spawning
+			 	 <br>
+			 	 Delay rate (ms) 
+			 	 <br>
+			 	 Bouncing edges
+			 	 <br>
+			 	 Pull force 
+			 	 </div>
+
+				 <div id="half">
+
+				 	<br>
+				 <input type="field" value = "50" id = "amountField" size = "3" maxlength = "5" onkeypress='return event.charCode >= 48 && event.charCode <= 57' style ="height: 10px;"></input>
+				 <br>
+			 	 <input type="field" value = "200" id = "startRangeField" size = "5" maxlength = "5" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+			 	 <br>
+			 	 <input type="field" value = "20" id = "sizeField" size = "5" maxlength = "2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+			 	 <br>
+			 	 <input type="field" value = "0" id = "circleDxField" size = "5" maxlength = "5" ></input>
+			 	 <br>
+			 	 <input type="field" value = "0" id = "circleDyField" size = "5" maxlength = "5"> </input>
+			 	 <br>
+			 	 <input type="field" value = "0" id = "xPosField" size = "5" maxlength = "5" ></input>
+			 	 <br>
+			 	 <input type="field" value = "0" id = "yPosField" size = "5" maxlength = "5" ></input>
+			 	 <br>
+			 	 <input type="field" value = "1" id = "ballDirectionCosField" size = "5" maxlength = "5"`> </input>
+			 	 <br>
+			 	 <input type="field" value = "1" id = "ballDirectionSinField" size = "5" maxlength = "5"> </input>
+			 	 <br>
+			 	 <input type="field" value = "360" id = "angleOfCircleField" size = "5" maxlength = "8"> </input>
+			 	 <br>
+			 	 
+			 	 <input type="checkbox" id = "spiralToggle" </input>
+			 	 <br>
+			 	 
+			 	 <input type="checkbox" id = "delaySpawningToggle" </input>
+			 	 <br>
+			 	 
+			 	 <input type="field" value = "40" id = "delayRateField" size = "5" maxlength = "10" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+			 	 <br>
+			 	 
+			 	 <input type="checkbox" id = "canBounceToggle" </input></b>
+			 	 <br>
+			 	 
+			 	 <input type="field" value = "0.5" id = "timeScaleField" size = "5" maxlength = "5" ></input>
+			 	 
+			 	 </div>
+			 	 </div>
+			 	 <br>
+			 	 
+		 	 
+	 	 </div>
+
+	 </body>
+</html>

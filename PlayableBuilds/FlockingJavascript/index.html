@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	 	 <title>Flocking Javascript</title>
+	 	 <link rel="stylesheet" type="text/css" href="style/style.css">
+         <script src="scr/Agent.js"></script>
+         <script src="scr/Vector.js"></script>
+         <script src="scr/script.js"></script>
+	</head>
+	 <body>
+         <div id= "controls">
+             <button type="button" id= "showButton" style="background-color: transparent; border: none;" > <img src="img/ball.png" style= "width: 20px;" ></button> 
+		 	 
+		 	 
+		 	 <div id="groupInfo">
+		 	 	<br>
+		 	 	<button type="button" id= "spawnButton">Spawn agent group</button> 
+		 	 <button type="button" id= "clearButton">Clear agents</button> 
+		 	 <br>
+		 	 	<div id="half">
+
+				<br>
+			 	 <b>
+                     Agent size
+                     <br>
+                 Agent speed
+                 <br>
+                 Group Amount 	
+			 	 <br>
+			 	 Random positions 
+                 <br>
+                 Follows mouse cursor
+			 	 <br>
+                 Spawn agent with left mouseclick
+			 	 <br>
+			 	 Seperation force
+			 	 <br>
+			 	 Cohesion force
+			 	 <br>
+			 	 Allignment force
+                
+                     
+                 </b>
+                 </div>
+				 <div id="half">
+                     <br>
+                    <input type="field" value = "3" id = "agentSizeField" size = "3" maxlength = "3" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46' style ="height: 10px;"></input>
+				 
+                     <br>
+                    <input type="field" value = "3" id = "agentSpeedField" size = "3" maxlength = "3" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46' style ="height: 10px;"></input>
+				 
+				 	<br>
+				 <input type="field" value = "50" id = "groupAmountField" size = "3" maxlength = "3" onkeypress='return event.charCode >= 48 && event.charCode <= 57' style ="height: 10px;"></input>
+				 <br>
+                 <input type="checkbox" id = "randomPositionsToggle" </input></b>
+			 	 <br>
+             <input type="checkbox" id = "followsMouseToggle" </input></b>
+			 	 <br>
+    <input type="checkbox" id = "mouseSpawnToggle" </input></b>
+			 	 <br>
+			 	 <input type="field" value = "500" id = "seperationForceField" size = "5" maxlength = "5" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+			 	 <br>
+    <input type="field" value = "100" id = "cohesionForceField" size = "5" maxlength = "5" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+			 	 <br>
+<input type="field" value = "50" id = "allignmentForceField" size = "5" maxlength = "5" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+			 	 <br>
+			 	 
+			 	 </div>
+			 	 </div>
+			 	 <br>
+			 	 
+		 	 
+	 	 </div>
+	 	 <canvas id="canvas" width="800" height="400">
+	 	     no canvas
+	 	 </canvas>
+         
+    </body>
+</html>

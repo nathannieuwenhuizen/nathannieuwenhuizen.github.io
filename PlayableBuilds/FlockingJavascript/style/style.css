@@ -1,0 +1,33 @@
+body{ 
+	background-color: black; 
+    color:  rgb(153, 214, 255);
+    font-size: 17px;
+}
+#canvas{
+    background-color: black;
+    border: 0px solid black;
+}
+
+#controls{
+  
+  top: 0;
+  left: 1;
+  position: absolute;
+  background-color: rgba(153, 214, 255,0.0); 
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+#half{
+  margin-right: 5px;
+  display: block;
+  float: left;
+  height: 200px;
+  
+}
+input{
+  height: 10px;
+}
+
+
+
