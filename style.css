@@ -167,7 +167,6 @@ img{
     font-size: 24px;
 }
 }
-
 @media only screen and (max-width: 1000px){
     #content{
         transition: width 1s ease;
@@ -269,10 +268,4 @@ img{
 #nav ul li:last-child {
     border-right: none;
 }
-/*
-#canvas{
-    top: 0px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}*/
+
