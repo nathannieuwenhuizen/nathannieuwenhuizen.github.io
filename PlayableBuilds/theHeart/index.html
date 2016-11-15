@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+<script src="script.js"></script>
+    <script src="Vector.js"></script>
+    <script src="CircleObject.js"></script>
+<link rel="stylesheet" type = "text/css" href= "style.css"> 
+<title>the heart</title>
+</head>
+
+<body>
+    <b>
+    <input type="button" id="showButton" value="Show menu">  
+    <div id="ui">
+        <input type="button" id="pauzeButton" value="Pauze!"><br>
+        
+        <p><div id="speedText"></div>
+        <input type="range" id="speedRange" value="50" step="10"></p>
+        <p><div id="factorText"></div>
+        <input type="text" id="factorField" value = "2" size = "3" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 45 || event.charCode == 46 || event.charCode == 44' maxlength="6"></input></p>
+
+
+        <p><div id="amountText"></div>
+        <input type="text" id="amountField" value = "1000" size = "3" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 45 || event.charCode == 46 || event.charCode == 44'></input></p>
+
+
+        Random colors <input type="checkbox" id="colorBox">
+</div></b>
+	<canvas id="canvas"></canvas>
+</body>
+</html>

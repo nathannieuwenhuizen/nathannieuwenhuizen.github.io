@@ -1,0 +1,25 @@
+body{
+	background-color: rgba(200,200,250, 1);
+    
+}
+#canvas{
+    background-color: white;
+}
+#ui{
+    top: 20px;
+    left: 0px;
+    display: none;
+    position: absolute;
+    border: 5px solid rgb(0,0,100);
+    margin: 10px;
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#showButton{
+    position: absolute;
+}
+input[type=button]{
+    border: 2px solid rgb(0,0,100);
+    font-weight: bold;
+}
