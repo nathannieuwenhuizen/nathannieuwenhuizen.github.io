@@ -38,7 +38,11 @@ window.addEventListener("load", function (){
     let factorText = document.getElementById("factorText");
     
     //The main circle is declared where all the positions will be calculated.
-    let mainCircle = new CircleObject(new Vector(canvas.width/2,canvas.height/2),canvas.height/2 - 20,'rgba(200,255,255, 0.0)',10);
+    let mainCircle;
+    if(canvas.width<canvas.height)
+        mainCircle = new CircleObject(new Vector(canvas.width/2,canvas.height/2),canvas.width/2 - 20,'rgba(200,255,255, 0.0)',10);
+    else
+        mainCircle = new CircleObject(new Vector(canvas.width/2,canvas.height/2),canvas.height/2 - 20,'rgba(200,255,255, 0.0)',10);
     
     //Vectors and variables for the line drawing is declared.
     let destinationPos = new Vector();
