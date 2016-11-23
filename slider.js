@@ -1,32 +1,55 @@
 window.addEventListener("load", function (){
 	var slider = document.getElementById("slider");
-    var slides =slider.getElementsByTagName('img');
+    var slides = slider.getElementsByTagName('img');
+    var buttons = document.getElementById("sliderButtons").getElementsByTagName('img');
     var amountOfimages = 3;
     var curentimage = 1;
-    var loop
-    console.log(slides);
-    slider.style.left = '-'+(curentimage-1)+'00%';
+    var loop;
+    var pauzeDuration = 6;
+    ResumeLoop();
+    gotToSlide(curentimage-1);
     
-    loop = setInterval(function(){
-        curentimage++;
-        console.log(curentimage);
-        if(curentimage >amountOfimages)
-        {    
-            //clearInterval(loop);
-            curentimage = 1;            
-        }
-        
-        gotToSlide(curentimage);
-        
-    },3000);
-    
-    function gotToSlide(i)
+    for(var i = 0; i < buttons.length; i++)
     {
-        
-        slides[curentimage-1].src =slides[curentimage-1].src; 
+        (function(i){
+            buttons[i].onclick = function()
+            {
+                gotToSlide(i); 
+                curentimage = i+1;
+                clearInterval(loop); 
+                ResumeLoop();
+            };
+        })(i);
+    }
+    
+    function ResumeLoop()
+    {
+        loop = setInterval(function(){
+            curentimage++;
+
+            if(curentimage >amountOfimages)
+                curentimage = 1;            
+
+            gotToSlide(curentimage-1);
+        }, pauzeDuration*1000);
+    }
+    
+    function gotToSlide(index)
+    {
+        slides[index].src =slides[index].src; 
         slider.style.transition = "all 2s";
-        slider.style.left = '-'+(curentimage-1)+'00%';
-        
+        slider.style.left = '-'+(index)+'00%';
+        UpdateButtons(index);
+    }
+    function UpdateButtons(index)
+    {
+        for(var i = 0; i < buttons.length; i++)
+        {
+            if(i == index)
+                buttons[i].src = "img/buttonPressed.jpg";
+            else
+                buttons[i].src = "img/button.jpg";
+        }
     }
     
 }, false);
