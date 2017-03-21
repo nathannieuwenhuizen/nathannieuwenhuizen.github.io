@@ -1,6 +1,6 @@
 window.addEventListener("load", function (){
 	var slider = document.getElementById("slider");
-    var slides = slider.getElementsByTagName('img');
+    var slides = slider.getElementsByTagName('a');
     var buttons = document.getElementById("sliderButtons").getElementsByTagName('img');
     var amountOfimages = 3;
     var curentimage = 1;

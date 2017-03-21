@@ -3,6 +3,8 @@
 body{
     font-family: 'Cabin Condensed', sans-serif;
     background-image: url("img/bg3.jpg");
+
+
     background-attachment:fixed;
     background-size: cover;
 }
@@ -55,6 +57,7 @@ img{
 #overlay{
     background-image: url(img/info.jpg);
     background-size: cover;
+    background-position: center;
 }
 #overlay a img:hover{
     transition: opacity 0.5s ease;
@@ -64,40 +67,70 @@ img{
     transition: opacity 0.5s ease;
     opacity: 1;
 }
+
+
 #sliderContainer{
     overflow:hidden;
-    height: 400px;
+    height: 70vh;
     background-color: black;
 }
 #slider{
-    width: 1000%;
+    height: inherit;
+    width: 400%;
     position: relative;
     transition: left 2s ease;
 }
-#slider img{
+#gif-1{
+    background: url("https://i.gyazo.com/0df0a60e6423188859341b72fa8a5141.gif") no-repeat;
+}
+#gif-2{
+    background: url("https://i.gyazo.com/3acf6bf42a1b725b553637de67908c16.gif") no-repeat;
+}
+#gif-3{
+    background: url("https://i.gyazo.com/f3995b7c9383ab7e4f69b597c4dedfe4.gif") no-repeat;
+}
+#slider a{
+    background-size: cover;
+    background-position: center;
     float: left;
-    width: 10%;
+    width: 25%;
+    
+    height: 100%;
     border: none;
 }
+
 #slide{
     position: absolute;
-    width: 10%;
+    width: 25%;
+    top: 0%;
     text-align: center;
+}
+#slide h2{
+    background: rgba(255,255,255,0.2);
+    bottom: 0;
+    text-shadow: 10px black;
+    font-size: 3vw;
 }
 #slide a{
     position: inherit;
-    top: 333%;
-    left: 1%;
+    top: 0%;
+    left: 100%;
     width: auto;
     background-color: rgba(0,0,0,0.7);
 }
+
+
+
 #sliderButtons{
+    position: absolute;
+    bottom: 2vh;
+    left:0%;
     width: 100%;
     text-align: center;
 }
 #sliderButtons img{
     display: inline-block;
-    width: 20px;
+    width: 3vw;
     margin: 10px;
 }
 #sliderButtons img:hover{
@@ -114,15 +147,18 @@ img{
 }
 
 /*pc lay out*/
-@media only screen and (min-width: 1000px){
-    #nav{
-        height: 43px;
-        margin-top: -20px;
-
+@media screen and (min-width: 1024px) and (orientation: landscape) {    
+    #nav ul{
+        height: 8vh;
     }
-    #nav ul li a {
+    .mobile-button{
+        display: none;
+    }
+    #nav ul li{
+        
+        height: 100%;
         float: left;
-        font-size: 20px;
+        font-size: 1.8vw;
     }
     #half, #halfdescription{
         float: left;
@@ -158,21 +194,39 @@ img{
     #halfcollom{
         width: 100%;
     }
+    .myImage{
+        width: 300px;
+    }
 }
 
 /*mobile lay out*/
-@media only screen and (max-width: 1000px){
-    #nav{
-        height: 270px;
-        margin-top: -30px;
-        
+@media screen and (orientation: portrait), screen and (max-width: 1023px) and (orientation: landscape){
+    .mobile-button{
+        border: none;
+        width: inherit;
+        background: url(img/menu.png) no-repeat;
+        background-size: contain;
+        background-position: 50%;
     }
-    #nav ul li a {
+    #nav ul{
+        overflow: hidden;
+        height: 10vh;
+    }
+    #nav ul li, .mobile-button{
         float: none;
-        font-size: 30px;
-        
+        height: 10vh;
+        font-size: 7vh;
+        padding: 0;
+        margin: 0;
     }
-        #half, #halfdescription{
+    #slider a{
+        background-size: cover;
+    }
+    #slide h2{
+        height: 12vw;
+        font-size: 5vw;
+    }
+    #half, #halfdescription{
         float: none;
         width: 95%;
         padding-right: 5%;
@@ -188,17 +242,39 @@ img{
         margin-right: auto;
     }
     #header{
+        padding: 0;
+        margin: 0;
         display: block;
-        padding-bottom: 10px;
+        
     }
     #canvas{
         margin-left: -55%;
     }
     p, ul,li,b{
-    font-size: 24px;
-}
+    font-size: 40px;
+    list-style: none;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    h2{
+        font-size: 10vw;
+    }
+    h3{
+        font-size: 8vw;
+    }
+    h4{
+        font-size: 5vw;
+    }
+    #collom  h3 a{
+        font-size: 8vw;
+    }
+    
+    #collom h3{
+        font-size: 2vw;
+    }
     #collom a{
-        font-size: 28px;
+        font-size: 6vw;
     }
     #content{
         transition: left 1s ease;
@@ -207,6 +283,14 @@ img{
         left: 2.5%;
     }
     #collom, halfcollom{
+        width: 90%;
+    }
+    #sliderButtons img{
+        display: inline-block;
+        width: 8vw;
+        margin: 2px;
+    }
+    .myImage{
         width: 90%;
     }
 }
@@ -220,8 +304,10 @@ img{
     padding: 20px 10px;
 }
 #nav{
-    background-color: rgba(30,30,30,1);    
+    background-color: rgba(30,30,30,1);   
+    position: relative;
 }
+
 #mainwrapper{
     clear: left;
     overflow: hidden;
@@ -237,7 +323,7 @@ img{
 #collom, #halfcollom{
     background-color: rgba(0,0,0,0.5);
     text-align: center;
-    min-height: 700px;
+    min-height: 52vw;
     float:left;
     padding-right: 2.5%;
     padding-left: 1.5%;
@@ -261,6 +347,7 @@ img{
     padding-top: 10px;
     padding-bottom: 5px;
     background-color: rgba(20,20,20,1);
+    border-top: 5px solid black;
 }
 #footer p{    
     font-size: 15px;
@@ -268,25 +355,34 @@ img{
 
 /*navigation
 ---------------------------*/
-#nav ul {
+#nav ul, .mobile-button {
+    
     list-style:none;
-    list-style-type: none;
-    left: -40px;
+    position: relative;
+    padding: 0;
+    margin: 0;
     width: 100%;
+    border-bottom: 5px solid black;
 }
 
-#nav ul li a {
-    transition: background-color 0.5s ease;
+#nav ul li a{
+    
+    width: inherit;
+    height: inherit;
+    line-height: 7vh;
     text-align: center;
+    transition: background-color 0.5s ease;
     display: block;
-    padding: 10px 20px;
+    padding: 0 2vw;
 }
-#nav ul li a:hover {
+
+#nav ul li:hover, .mobile-button:hover {
     transition: background-color 0.5s ease;
     background-color: #111;
 }
-#nav ul .active {
+#nav .active {
     background-color: black;
+    background-size: cover;
 }
 #nav ul li:last-child {
     border-right: none;

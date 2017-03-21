@@ -1,32 +1,23 @@
 <!--
-_____                         
-(____ \                 _      
-_   \ \   ___   ____  | |_    
-| |   | | / _ \ |  _ \ |  _)   
-| |__/ / | |_| || | | || |__   
-|_____/   \___/ |_| |_| \___)  
-
-_                _            
-| |              | |           
-| |  ___    ___  | |  _        
-| | / _ \  / _ \ | | / )       
-| || |_| || |_| || |< (        
-|_| \___/  \___/ |_| \_)       
-
-
-_                      
-____ | |_     ____   _   _   
-/ _  ||  _)   |    \ | | | |  
-( ( | || |__   | | | || |_| |  
-\_||_| \___)  |_|_|_| \__  |  
-(____/   
-_         _ 
-| |       | |
-____   ___    _ | |  ____ | |
-/ ___) / _ \  / || | / _  )|_|
-( (___ | |_| |( (_| |( (/ /  _ 
-\____) \___/  \____| \____)|_|
-
+      @@@@@@@@@@       @@@@@@@@@@
+    @@@@@@@@@@@@@@   @@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@@@@@@@@@
+          @@@@@@@@@@@@@@@@@@@
+            @@@@@@@@@@@@@@@
+              @@@@@@@@@@@
+                @@@@@@@
+                  @@@
+                   @
 -->
 <!doctype html>
 <html>
@@ -35,6 +26,7 @@ ____   ___    _ | |  ____ | |
 
         <link rel="icon" href="img/adreslogo.png" />
         <script src="slider.js"></script>
+        <script src="mobileButton.js"></script>
         <link rel="stylesheet" type = "text/css" href= "style.css"> 
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>	
 
@@ -42,9 +34,7 @@ ____   ___    _ | |  ____ | |
     </head>
 
     <body>
-        <?php 
-echo("hello world");
-?>
+        
         <div id = "content">
             <div id="header">
                 <a href=""><img src="img/naamloos.png"></a>
@@ -53,7 +43,8 @@ echo("hello world");
             <div id="nav">
                 <ul>
                     <b>
-                        <li><a href="index.html"class="active">Home</a></li>
+                       <button class="mobile-button"></button>
+                        <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="projects/index.html">Games</a></li>
                         <li><a href="otherwork/index.html">Other work</a></li>
                         <li><a href="contact/index.html">Contact</a></li>
@@ -69,16 +60,19 @@ echo("hello world");
                         <div id="slide">
                             <h2>Welcome, I am Nathan Nieuwenhuizen</h2>                    
                         </div>
-                        <div id="slide" style="left: 10%;">
+                        <div id="slide" style="left: 25%;">
                             <h2 style="color: white;">I am a game developer</h2>
                         </div>
-                        <div id="slide" style="left: 20%;">
+                        <div id="slide" style="left: 50%;">
                             <h2>I work with HTML5 and Unity</h2>
                         </div>
-                        <a href="projects/crystales.html"><img src="https://i.gyazo.com/0df0a60e6423188859341b72fa8a5141.gif" ></a>
-                        <a href="projects/waterrun.html"><img src="https://i.gyazo.com/3acf6bf42a1b725b553637de67908c16.gif" ></a>
-                        <a href="projects/flocking.html"><img src="https://i.gyazo.com/f3995b7c9383ab7e4f69b597c4dedfe4.gif" ></a>
-
+                        <a id="gif-1" href="projects/crystales.html"></a>
+                        <a id="gif-2" href="projects/waterrun.html"></a>
+                        <a id="gif-3" href="projects/flocking.html"></a>
+                        <!--<img src="https://i.gyazo.com/0df0a60e6423188859341b72fa8a5141.gif" >
+                        <img src="https://i.gyazo.com/3acf6bf42a1b725b553637de67908c16.gif" >
+                        <img src="https://i.gyazo.com/f3995b7c9383ab7e4f69b597c4dedfe4.gif" >
+                        -->
                     </div> 
                 </div>
 
