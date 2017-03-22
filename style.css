@@ -2,11 +2,11 @@
 ---------------------------*/
 body{
     font-family: 'Cabin Condensed', sans-serif;
-    background-image: url("img/bg3.jpg");
+    background-color: #060F38;
 
-
+    /*background-image: url("img/bg3.jpg");
     background-attachment:fixed;
-    background-size: cover;
+    background-size: cover;*/
 }
 p, h1, h2, h3, h4, h5, h6, ul, li,b{
     color: white;
@@ -71,7 +71,7 @@ img{
 
 #sliderContainer{
     overflow:hidden;
-    height: 70vh;
+    height: 60vh;
     background-color: black;
 }
 #slider{
@@ -279,8 +279,8 @@ img{
     #content{
         transition: left 1s ease;
         position: absolute;
-        width: 95%;
-        left: 2.5%;
+        width: 100%;
+        left: 0%;
     }
     #collom, halfcollom{
         width: 90%;
@@ -383,7 +383,8 @@ img{
 #nav .active {
     background-color: black;
     background-size: cover;
-}
+    color: aliceblue;
+}#nav .active
 #nav ul li:last-child {
     border-right: none;
 }
