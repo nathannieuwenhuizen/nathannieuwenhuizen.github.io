@@ -102,41 +102,32 @@ body {
 /*pc lay out*/
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   #nav ul {
-    height: 8vh; }
-
+    height: 4vw; }
   .mobile-button {
     display: none; }
-
   #nav ul li {
     height: 100%;
     float: left;
     font-size: 1.8vw; }
-
   #half, #halfdescription {
     float: left;
     width: 45%;
     padding-right: 5%; }
-
   #halfdescription {
     float: right; }
-
   #mainwrapper {
     text-align: left; }
-
   #header a {
     margin-left: 0;
     width: auto;
     max-width: 500px; }
-
   p, ul, li, b {
     font-size: 18px; }
-
   #content {
     transition: left 1s ease;
     position: absolute;
     width: 90%;
     left: 5%; }
-
   .colloms {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -145,16 +136,14 @@ body {
     .colloms .collom {
       flex: 1;
       height: auto; }
-
   #halfcollom {
     width: 100%; }
-
   .myImage {
     width: 300px; }
-
   #slide h2 {
     height: auto;
     font-size: 40px; } }
+
 /*mobile lay out*/
 @media screen and (orientation: portrait), screen and (max-width: 1023px) and (orientation: landscape) {
   .mobile-button {
@@ -163,85 +152,66 @@ body {
     background: url(img/menu.png) no-repeat;
     background-size: contain;
     background-position: 50%; }
-
   #nav ul {
     overflow: hidden;
     height: 10vh; }
-
   #nav ul li, .mobile-button {
     float: none;
     height: 10vh;
     font-size: 7vh;
     padding: 0;
     margin: 0; }
-
   #half, #halfdescription {
     float: none;
     width: 95%;
     padding-right: 5%; }
-
   #mainwrapper {
     text-align: center; }
-
   #header a {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto; }
-
   #header {
     padding: 0;
     margin: 0;
     display: block; }
-
   p, ul, li, b {
     font-size: 40px;
     list-style: none; }
-
   h1 {
     font-size: 10vw; }
-
   h2 {
     font-size: 1vw; }
-
   h3 {
     font-size: 8vw; }
-
   h4 {
     font-size: 5vw; }
-
   .collom h3 a {
     font-size: 8vw; }
-
   .collom h3 {
     font-size: 2vw; }
-
   .collom a {
     font-size: 6vw; }
-
   #content {
     transition: left 1s ease;
     position: absolute;
     width: 100%;
     left: 0%; }
-
   .collom, halfcollom {
     width: 90%; }
-
   #sliderButtons img {
     display: inline-block;
     width: 8vw;
     margin: 2px; }
-
   .myImage {
     width: 90%; }
-
   #slider a {
     background-size: cover; }
-
   #slide h2 {
     height: auto;
     font-size: 30px; } }
+
 #mainwrapper {
   clear: left;
   overflow: hidden;
@@ -310,5 +280,3 @@ body {
 #nav ul li:hover, .mobile-button:hover {
   transition: background-color 0.5s ease;
   background-color: #111; }
-
-/*# sourceMappingURL=style.css.map */
