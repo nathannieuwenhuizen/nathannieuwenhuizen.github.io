@@ -1,12 +1,12 @@
 window.addEventListener("load", function (){
 	var slider = document.getElementById("slider");
-    var slides = slider.getElementsByTagName('a');
+    var slide_texts = slider.getElementsByTagName('a');
     var buttons = document.getElementById("sliderButtons").getElementsByTagName('img');
     var amountOfimages = 3;
     var curentimage = 1;
     var loop;
     var pauzeDuration = 6;
-    ResumeLoop();
+    //ResumeLoop();
     gotToSlide(curentimage-1);
     
     for(var i = 0; i < buttons.length; i++)
@@ -17,7 +17,7 @@ window.addEventListener("load", function (){
                 gotToSlide(i); 
                 curentimage = i+1;
                 clearInterval(loop); 
-                ResumeLoop();
+                //ResumeLoop();
             };
         })(i);
     }
@@ -36,9 +36,10 @@ window.addEventListener("load", function (){
     
     function gotToSlide(index)
     {
-        slides[index].src =slides[index].src; 
+        slide_texts[index].src = slide_texts[index].src; 
         slider.style.transition = "all 2s";
         slider.style.left = '-'+(index)+'00%';
+        
         UpdateButtons(index);
     }
     function UpdateButtons(index)
