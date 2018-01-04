@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Pong";
-    src: url(../fonts/delirium/delirium.woff) format("woff"),
-    url(../fonts/delirium/delirium.ttf) format("ttf");
+    src: url("../fonts/Delirium/delirium.woff") format("woff"),
+         url("../fonts/Delirium/delirium.ttf") format("ttf");
     font-weight: normal;
     font-style: normal;
 }
