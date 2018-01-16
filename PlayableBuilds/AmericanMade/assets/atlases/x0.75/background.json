@@ -1,28 +1,36 @@
 {"frames": [
 
 {
-	"filename": "bg_jpg",
-	"frame": {"x":1,"y":1,"w":750,"h":1125},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":750,"h":1125},
-	"sourceSize": {"w":750,"h":1125}
-},
-{
-	"filename": "bg_png",
-	"frame": {"x":753,"y":1,"w":697,"h":962},
+	"filename": "bg_4",
+	"frame": {"x":135,"y":1,"w":698,"h":192},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":36,"y":38,"w":697,"h":962},
-	"sourceSize": {"w":750,"h":1125}
+	"spriteSourceSize": {"x":2,"y":0,"w":698,"h":192},
+	"sourceSize": {"w":701,"h":200}
+},
+{
+	"filename": "bg_pilar_1",
+	"frame": {"x":1,"y":1,"w":132,"h":965},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":38,"w":132,"h":965},
+	"sourceSize": {"w":141,"h":1005}
+},
+{
+	"filename": "stripe",
+	"frame": {"x":135,"y":195,"w":1,"h":525},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1,"h":525},
+	"sourceSize": {"w":1,"h":525}
 }],
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "background.png",
 	"format": "RGBA8888",
-	"size": {"w":1451,"h":1127},
+	"size": {"w":834,"h":967},
 	"scale": "0.75",
-	"smartupdate": "$TexturePacker:SmartUpdate:991f6ddafa7edcec496063d4415544db:f1abef9268da22c83bba67d94c58f38f:e2e29593c8250507ed07cd3d739341b2$"
+	"smartupdate": "$TexturePacker:SmartUpdate:e0018335f603fa9e81b22710691a5167:179be308160e7fc3874aab7de42e41ff:e2e29593c8250507ed07cd3d739341b2$"
 }
 }

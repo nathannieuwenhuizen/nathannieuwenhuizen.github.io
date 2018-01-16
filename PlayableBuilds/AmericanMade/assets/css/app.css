@@ -95,7 +95,7 @@ body, html {
     visibility: hidden;
     width: 20vw;
     height: 8vw;
-    background-image: url("../images/x1/skip.png?");
+    background-image: url("../images/x1/continue.png?");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -103,10 +103,11 @@ body, html {
     top: 1vw;
     right: 1vw;
     opacity: 0;
-    transition: opacity 0.5s linear 1s;
+    transition: opacity 0.5s linear 1s, transform 0.5s ease;
 }
 #skip:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 /*@media (orientation: portrait) and (max-width: 1024px) {
     #orientation {
