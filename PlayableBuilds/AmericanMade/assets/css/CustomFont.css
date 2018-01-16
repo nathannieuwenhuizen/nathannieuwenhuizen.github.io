@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Delirium2";
+    src: url("../fonts/Delirium/delirium.woff") format("woff"),
+         url("../fonts/Delirium/delirium.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Delirium";
+    src: url("../fonts/Manifesto/TX_Manifesto.woff") format("woff"),
+    url("../fonts/Manifesto/TX_Manifesto.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
